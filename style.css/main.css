@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:  hsl(210, 46%, 95%);
+    font-family: Barlow Semi Condensed, sans-serif;
+}
+img{
+    width: 100%;
+}
+#bodywrap{
+    width: 100%;
+}
+#testimonialscontainer{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.testimonydiv{
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px grey;
+}
+.testifierinfo{
+    display: flex;
+}
+.testifierinfo p{
+    margin: 0;
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+}
+.testifierinfo span{
+    font-weight: 600;
+}
+.imagediv{
+    width: 20%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.imagediv img{
+    border-radius: 50%;
+    display: block;
+}
+
+.bg_moderateviolet{
+    background: hsl(263, 55%, 52%);
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+.bg_moderateviolet .imagediv{
+    border: 2px solid magenta;
+}
+
+.bg_darkblackishblue{
+    background: hsl(219, 29%, 14%);
+}
+.bg_darkblackishblue .imagediv{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.bg_verydarkgrayishblue{
+    background:  hsl(217, 19%, 35%);
+}
+
+.bg_white{
+    background: hsl(0, 0%, 100%);
+}
+
+.bg_moderateviolet span, .bg_darkblackishblue span, .bg_verydarkgrayishblue span{
+    color: hsl(0, 0%, 100%);
+}
+.bg_moderateviolet h3, .bg_darkblackishblue h3, .bg_verydarkgrayishblue h3{
+    color: hsl(0, 0%, 100%);
+}
+.bg_moderateviolet p, .bg_darkblackishblue p, .bg_verydarkgrayishblue p{
+    color: hsl(0, 0%, 81%);
+}
+
+.bg_white h3{
+    color: hsl(217, 19%, 35%);
+}
+.bg_white p{
+    color: /*hsl(0, 0%, 81%)*/ hsl(217, 19%, 35%);
+}
+@media (min-width: 769px) {
+    #testimonialscontainer{
+        width: 80%;
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .imagediv{
+        width: 50px;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    .testimonydiv{
+        margin: 10px;
+    }
+    .bg_moderateviolet{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .bg_verydarkgrayishblue{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .testimonydiv:nth-child(5){
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .bg_darkblackishblue{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .testimonydiv:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
